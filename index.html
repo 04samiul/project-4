@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- Authorities Information -->
+    <meta name="author" content="Md. Samiul Alam">
+    <meta name="description" content="Practice Project">
+
+    <!-- Metas -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Title & Favicon -->
+    <title>Img Editor | Md Samiul Alam</title>
+    <link rel="shortcut icon" style="color: #fff;" href="assets/img/favicon.svg" type="image/x-icon">
+
+    <!-- CSS Links -->
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/res.min.css">
+    <link rel="stylesheet" href="assets/icons/css/all.min.css">
+    <link rel="stylesheet" href="assets/icons/css/fontawesome.min.css">
+
+</head>
+
+<body>
+    <section id="app">
+        <div class="pic">
+            <div class="image preview">
+                <img src="assets/img/cloud-arrow-up.svg" alt="">
+                <h1 id="uploadStyles">Upload Your Image</h1>
+                <input type="file" id="image-collector" accept="image/*" hidden>
+            </div>
+        </div>
+        <div class="slider disable">
+            <input type="range" max="200" min="0" value="100" id="range">
+        </div>
+        <div class="keypad disable ">
+            <div class="text">
+                <p id="filterName"></p>
+                <p id="filterValue"></p>
+            </div>
+            <div class="keys">
+                <div class="div1 key " id="reset">
+                    <abbr title="Reset All">
+                        <i class="fa-solid fa-power-off"></i>
+                    </abbr>
+                    <p>Reset <br> All</p>
+                </div>
+                <div class="div2 key active" id="brightness">
+                    <abbr title="Brightness">
+                        <i class="fa-solid fa-lightbulb"></i>
+                    </abbr>
+                    <p>Brightness</p>
+                </div>
+                <div class="div3 key" id="contrast">
+                    <abbr title="Contrast">
+                        <i class="fa-solid fa-circle-half-stroke"></i>
+                    </abbr>
+                    <p>Contrast</p>
+                </div>
+                <div class="div4 key" id="saturation">
+                    <abbr title="Saturation">
+                        <i class="fa-solid fa-droplet"></i>
+                    </abbr>
+                    <p>Saturation</p>
+                </div>
+                <div class="div5 key" id="sepia">
+                    <abbr title="Sepia">
+                        <i class="fa-solid fa-mountain-sun"></i>
+                    </abbr>
+                    <p>Sepia</p>
+                </div>
+                <div class="div6 key" id="grayscale">
+                    <abbr title="Greyscale" id="grayscale">
+                        <i class="fa-solid fa-eye-dropper"></i>
+                    </abbr>
+                    <p>Greyscale</p>
+                </div>
+                <div class="div7 key rotate" id="left">
+                    <abbr title="Rotate Left">
+                        <i class="fa-solid fa-arrow-rotate-left"></i>
+                    </abbr>
+                    <p>Rotate<br>Left</p>
+
+                </div>
+                <div class="div8 key rotate" id="right">
+                    <abbr title="Rotate Right">
+                        <i class="fa-solid fa-arrow-rotate-right"></i>
+                    </abbr>
+                    <p>Rotate<br>Right</p>
+                </div>
+                <div class="div9 key" id="save">
+                    <abbr title="Save Img">
+                        <i class="fa-solid fa-cloud-arrow-down"></i>
+                    </abbr>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+    <!-- JavaScript Links -->
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
